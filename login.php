@@ -9,7 +9,7 @@ defined('CONTROL') or die('Acesso Negado !');
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sistema de login -> Logar-se</title>
 </head>
 <body>
     <form method="post">
@@ -24,18 +24,10 @@ defined('CONTROL') or die('Acesso Negado !');
         <div class="login-row">
             <input type="submit" value="Cadastrar-se">
         </div>
+        <div class="login-row">
+            <a href="index.php?rota=criar_usuario">Login in</a>
+        </div>
     </form>
-
-    <?php
-    echo '<pre>';
-
-    if(!empty($_REQUEST)) {
-        print_r ($_REQUEST);
-    }
-
-    echo '</pre>';
-    ?>
-
 </body>
 </html>
 
