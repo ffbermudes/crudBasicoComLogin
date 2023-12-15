@@ -12,8 +12,8 @@ defined('CONTROL') or die('Acesso Negado !');
     <title>Sistema de login -> criar usuario</title>
 </head>
 <body>
-<form method="post">
-    <div class="login-row">
+<form method="post" action="index.php?rota=db">
+    <div class="login-row" >
         <label for="usuario">Email / Telefone</label><br>
         <input type="text" id="usuario" name="usuarios"><br>
     </div>

@@ -22,10 +22,8 @@ defined('CONTROL') or die('Acesso Negado !');
             <input type="text" id="password" name="pass"><br>
         </div>
         <div class="login-row">
-            <input type="submit" value="Cadastrar-se">
-        </div>
-        <div class="login-row">
-            <a href="index.php?rota=criar_usuario">Login in</a>
+            <input type="submit" value="Login">
+            <a href="index.php?rota=criar_usuario">Cadastre-se</a>
         </div>
     </form>
 </body>
