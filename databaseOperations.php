@@ -1,20 +1,22 @@
 <?php
 defined('CONTROL') or die('Acesso negado');
+
 class Db
 {
-    public static mysqli $conn;
+    private mysqli $conn;
 
-    public static function conectar(string $hostname, string $username, string $password, string $database)
+    public function __construct()
     {
-        self::$conn = new mysqli($hostname, $username, $password, $database);
+        $this->conn = new mysqli('localhost', 'root', '123456', 'crudteste');
 
-        if (self::$conn->connect_error) {
-            die("Connection failed: " . self::$conn->connect_error);
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
         }
-
-        echo "Connection successful!";
+        echo('Database conectado com sucesso!');
     }
 
-}
+    public function cadUser()
+    {
 
-Db::conectar('localhost', 'root', '123456', 'crudteste');
+    }
+}
