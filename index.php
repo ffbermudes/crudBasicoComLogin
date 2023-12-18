@@ -11,7 +11,7 @@ if (empty($usuario_logado)) {
     $rotas = [
         'login' => 'login.php',
         'criar_usuario' => 'criar_usuario.php',
-        'db' => 'dbOperations/cad_user.php'
+        'cadastra_banco' => 'dbOperations/cad_user.php'
     ];
 
     require_once $rotas[$rota];
@@ -19,10 +19,7 @@ if (empty($usuario_logado)) {
 } else {
     $rota = $_GET['rota'] ?? 'home';
     $rotas = [
-        'login' => 'login.php',
-        'criar_usuario' => 'criar_usuario.php',
         'home' => 'home.php',
-        'db' => 'dbOperations/cad_user.php'
     ];
 
     require_once $rotas[$rota];
