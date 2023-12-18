@@ -1,7 +1,6 @@
 <?php
 defined('CONTROL') or die('Acesso Negado !');
 ?>
-
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -30,5 +29,7 @@ defined('CONTROL') or die('Acesso Negado !');
         <a href="index.php?rota=login">voltar login</a>
     </div>
 </form>
+
+<script type="module" src="assets/index.js"></script>
 </body>
 </html>

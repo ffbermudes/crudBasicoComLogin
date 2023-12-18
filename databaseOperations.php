@@ -26,11 +26,6 @@ class Db
         return $count > 0;
     }
 
-    public function hash_pass()
-    {
-
-    }
-
     public function cad_user($usuario, $pass, $re_pass)
     {
 
@@ -52,12 +47,9 @@ class Db
             return;
         }
 
-        // Hash da senha
-        $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
-
         // Preparar e executar a consulta SQL para inserção
         $stmt = $this->conn->prepare("INSERT INTO user (user, pass_sha) VALUES (?, ?)");
-        $stmt->bind_param("ss", $usuario, $hashed_pass);
+        $stmt->bind_param("ss", $usuario, password_hash($pass, PASSWORD_DEFAULT));
         $stmt->execute();
 
         if ($stmt->affected_rows > 0) {
@@ -71,4 +63,3 @@ class Db
         $this->conn->close();
     }
 }
-

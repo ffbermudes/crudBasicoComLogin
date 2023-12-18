@@ -1,7 +1,6 @@
 <?php
 defined('CONTROL') or die('Acesso Negado !');
 ?>
-
 <!doctype html>
 <html lang="pt-BR">
 <head>
