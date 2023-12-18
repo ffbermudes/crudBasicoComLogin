@@ -28,15 +28,16 @@ class Db
 
     public function cad_user($usuario, $pass, $re_pass)
     {
-        // Verificar se as senhas coincidem
-        if ($pass !== $re_pass) {
-            echo "As senhas não coincidem";
-            return;
-        }
 
         if (empty($usuario) or empty($pass) or empty($re_pass))
         {
-            echo 'teste';
+            echo 'Não é permitido campos em branco no cadastro de um novo usuário!';
+            return;
+        }
+
+        // Verificar se as senhas coincidem
+        if ($pass !== $re_pass) {
+            echo "As senhas não coincidem";
             return;
         }
 
