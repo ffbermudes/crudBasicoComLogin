@@ -26,11 +26,15 @@ class Db
         return $count > 0;
     }
 
+    public function hash_pass()
+    {
+
+    }
+
     public function cad_user($usuario, $pass, $re_pass)
     {
-        // Verificar se as senhas coincidem
         if ($pass !== $re_pass) {
-            echo "As senhas não coincidem";
+            echo "Servidor informa: As senhas não coincidem !";
             return;
         }
 
