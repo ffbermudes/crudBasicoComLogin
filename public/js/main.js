@@ -1,3 +1,3 @@
-import CriarUsuario from "./criar_usuario.js";
+import ValidacoesInputsCriarUsuario from "./criarUsuario.js"
 
-CriarUsuario.init()
+new ValidacoesInputsCriarUsuario()

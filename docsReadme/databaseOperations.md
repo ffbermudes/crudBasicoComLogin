@@ -22,6 +22,8 @@ Métodos:
 
 [__construct](#construct): O método construtor irá instanciar o objeto que a classe mysqli constroí. os dados localhost, usuario, senha, nome do banco são inseridos internamente.
 
+[user_exists](#user_exists): Checa no banco de dados se existe algum usuário cadastrado no banco. 
+
 [cad_user](#cad_user): Irá inserir o novo usuário no banco. Existem algumas validações que precisam ser validadas antes, irei descrever abaixo:
 
 1. Verifica se as senhas estão iguais.
