@@ -30,6 +30,6 @@ defined('CONTROL') or die('Acesso Negado !');
     </div>
 </form>
 
-<script type="module" src="assets/index.js"></script>
+<script type="module" src="public/js/main.js"></script>
 </body>
 </html>
